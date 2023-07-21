@@ -7,4 +7,4 @@ var_dump(UserInfo::getKey(["uid"]));
 var_dump(UserInfo::getHashKey(["uid"]));
 var_dump(UserInfo::getListKey());
 var_dump(UserInfo::getSetKey());
-var_dump(UserInfo::getSSetKey());
+var_dump(UserInfo::getSSetKey(['user', '20230721']));

@@ -47,10 +47,10 @@ abstract class Kv
             $k = static::$prefix . static::$separator . $k;
         }
 
-        if(1 === count($value)){
-            return $k . static::$separator . $value[0];
+        if (0 === count($value)) {
+            return $k;
         }
 
-        return $k . implode(static::$separator, $value);
+        return $k . static::$separator . implode(static::$separator, $value);
     }
 }
